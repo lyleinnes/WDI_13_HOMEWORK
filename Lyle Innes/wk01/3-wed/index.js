@@ -1,65 +1,65 @@
 console.log('js ON')
 
-// RECIPE CARD 
+// // RECIPE CARD 
 
-var favRecipe = {
-  title: 'mole',
-  servings: 2,
-  ingredients: ['cinnamon', 'cumin', 'cocoa']
-}
-// return to this soon <----
+// var favRecipe = {
+//   title: 'mole',
+//   servings: 2,
+//   ingredients: ['cinnamon', 'cumin', 'cocoa']
+// }
+// // return to this soon <----
 
-console.log('title: ' + favRecipe.title);
-console.log(favRecipe['servings']);
-console.log(favRecipe.ingredients[0]);
-console.log(favRecipe.ingredients[1]);
-console.log(favRecipe.ingredients[2]);
+// console.log('title: ' + favRecipe.title);
+// console.log(favRecipe['servings']);
+// console.log(favRecipe.ingredients[0]);
+// console.log(favRecipe.ingredients[1]);
+// console.log(favRecipe.ingredients[2]);
 
-// THE READING LIST
+// // THE READING LIST
 
-var readingList = [
-  {
-    title: 'harry potter',
-    author: 'j.k rowling',
-    alreadyRead: true
-  },
-  {
-    title: 'no country for old men',
-    author: 'cormac mccarthy',
-    alreadyRead: true
-  },
-  {
-    title: 'the winds of winter',
-    author: 'george rr martin',
-    alreadyRead: false
-  }
-];
+// var readingList = [
+//   {
+//     title: 'harry potter',
+//     author: 'j.k rowling',
+//     alreadyRead: true
+//   },
+//   {
+//     title: 'no country for old men',
+//     author: 'cormac mccarthy',
+//     alreadyRead: true
+//   },
+//   {
+//     title: 'the winds of winter',
+//     author: 'george rr martin',
+//     alreadyRead: false
+//   }
+// ];
 
-for (var x = 0; x < readingList.length; x ++) {
-  var book = alreadyRead[x];
-  var desc = book.title + ' by ' + ' ' + book.author
+// for (var x = 0; x < readingList.length; x ++) {
+//   var book = alreadyRead[x];
+//   var desc = book.title + ' by ' + ' ' + book.author
 
-  if (readingList[x].alreadyRead/*=== true*/) {
-    console.log('you already read ' + readingList[x].title + ' by ' + readingList[x].author)
-  }
-  else {
-    console.log('you need to read ' + readingList[x].title + ' by ' + readingList[x].author)
-  }
-}
+//   if (readingList[x].alreadyRead/*=== true*/) {
+//     console.log('you already read ' + readingList[x].title + ' by ' + readingList[x].author)
+//   }
+//   else {
+//     console.log('you need to read ' + readingList[x].title + ' by ' + readingList[x].author)
+//   }
+// }
 
-// THE MOVIE DATABASE
+// // THE MOVIE DATABASE
 
-var favMovie = {
-  title: 'A Clockwork Orange',
-  duration: '2 hours, 16 minutes',
-  stars: ['Malcolm McDowell', 'Warren Clarke', 'Michael Bates', 'Patrick Magee']
-};
+// var favMovie = {
+//   title: 'A Clockwork Orange',
+//   duration: '2 hours, 16 minutes',
+//   stars: ['Malcolm McDowell', 'Warren Clarke', 'Michael Bates', 'Patrick Magee']
+// };
 
-var movieInfo = function(favMovie) {
-  return favMovie.title + ' is ' + favMovie.duration + ' long and stars ' + favMovie.stars
-}
+// var movieInfo = function(favMovie) {
+//   return favMovie.title + ' is ' + favMovie.duration + ' long and stars ' + favMovie.stars
+// }
 
-console.log(movieInfo(favMovie));
+// console.log(movieInfo(favMovie));
 
 
 
