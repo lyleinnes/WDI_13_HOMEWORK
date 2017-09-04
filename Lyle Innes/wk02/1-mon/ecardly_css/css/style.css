@@ -1,0 +1,52 @@
+#main-wrap {
+  min-width: 1428px;
+  background-color: lightgrey;
+}
+
+.ecardlylogo {
+  display: block;
+  margin: 0 auto;
+
+}
+
+.bigOrange {
+  text-transform: uppercase;
+  color: #ff4c00;
+  font-weight: 800;
+}
+
+.midOrange {
+  color: #ff4c00;
+  font-weight: 800;
+}
+
+body {
+  margin: 0;
+  width:1428px;
+}
+
+header {
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat-x;
+}
+
+main {
+  width: 600px;
+  padding: 20px;
+  margin: 60px auto;
+  background-color: white;
+}
+
+article {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+footer {
+  border-top: dotted 1px;
+  border-bottom: solid 1px;
+}
+
+.footerText {
+  margin: 8px 0 8px 0;
+}
