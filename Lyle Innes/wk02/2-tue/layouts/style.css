@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  border: 2px solid black;
+}
+
+body {
+  margin: 0;
+  background-color: #efefef;
+}
+
+main {
+  padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+  /*float: left;*/
+  background-color: white;
+  width: 70%;
+}
+
+aside {
+  display: inline-block;
+  vertical-align: top;
+  /*float: left;*/
+  background-color: yellow;
+  width: 28%;
+}
+
+article {
+  background: tomato;
+}
+
+article footer {
+  border-top: 1px solid black;
+  border-bottom: 1px dotted black;
+}
+
+.footer {
+  text-align: center;
+}
+/* float and inline block DO NOT mix! */

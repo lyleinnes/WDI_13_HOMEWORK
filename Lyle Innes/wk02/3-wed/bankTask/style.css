@@ -1,0 +1,163 @@
+body {
+  background-color: white;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  background-color: white;
+  box-sizing: border-box;
+  width: 95%;
+  height: 20%;
+  min-width: 570px;
+}
+header>* {
+  display: inline-block;
+}
+header>img {
+  box-sizing: border-box;
+  height: 80%;
+  border: 5px solid skyblue;
+  border-radius: 20%;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+header>h1 {
+  font-size: 2.5em;
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 6%;
+  font-family: cursive;
+}
+
+main {
+  background-color: white;
+  box-sizing: border-box;
+  width: 95%;
+  padding: 10px;
+  min-width: 600px;
+  font-family: monospace;
+  font-size: 1.2em;
+
+}
+
+.savWrap {
+  background-color: white;
+  box-sizing: border-box;
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+  border: 5px solid skyblue;
+  border-radius: 10%;
+  margin: 20px;
+}
+
+.savInput {
+  text-align: right;
+}
+
+.savDisp {
+  margin: 1em;
+}
+.prompt {
+  color: white;
+  transition: 1s;
+}
+.promptRed {
+  color: red;
+  transition: 1s;
+}
+main>div>input {
+  margin: 1em;
+}
+main>div>button {
+  margin: .5em;
+}
+
+#savDep {
+  border: 2px solid green;
+  border-radius: 5px;
+  outline: 0;
+}
+
+#savWit {
+  border: 2px solid red;
+  border-radius: 5px;
+  outline: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
+  width: 90%;
+}
+
+header {
+  background-color: mistyrose;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+main {
+  background-color: grey;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+footer {
+  background-color: lightgreen;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.topPic {
+  display: inline-block;
+  width: 30%;
+}
+
+.topTitle {
+  padding: 0 0 0 40px;
+  display: inline-block;
+  width: 65%;
+  margin-bottom: 0;
+  margin-top: 0;
+  background: lightblue;
+}
+
+.savings {
+  width: 40%;
+  background-color: skyblue;
+}
+
+.savings>* {
+  width: 100%;
+  text-align: center;
+}
+
+.savings>button {
+  display: inline-block;
+  width: 45%;
+  margin: 5px;
+}
+
+.savings>.userInput>input {
+  padding: 5px;
+  margin: 10px;
+}
+*/

@@ -1,0 +1,51 @@
+body {
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+span {
+  font-family: helvetica;
+  margin-top: 20px;
+}
+
+p {
+  font-family: helvetica;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+img {
+  width: 30%;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.wrap {
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.tallys {
+  width: 46%;
+  border: 2px solid skyblue;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 1%;
+  background: mistyrose;
+}
+
+.result {
+  background: mistyrose;
+  display: inline-block;
+  min-width: 200px;
+  min-height: 40px;
+  border-radius: 20px;
+  border: 2px solid skyblue;
+  margin: 1%;
+  padding-top: 15px;
+  font-family: helvetica;
+}

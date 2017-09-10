@@ -1,0 +1,119 @@
+.headTitle h1,
+.headTitle h2 {
+  display: inline-block;
+  font-family: 'Encode Sans', sans-serif;
+
+}
+
+.headTitle>h1 {
+  font-weight: 200;
+  font-size: 3em;
+  margin: 0 5px 0 0;
+  color: #b22929;
+}
+
+.headTitle>h2 {
+  color: grey;
+  margin-left: 20px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.mainHead {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: 'Encode Sans', sans-serif;
+
+}
+
+.topList>li {
+  background-color: black;
+  color: white;
+  width: 13.5%;
+  padding: 15px;
+  text-align: center;
+}
+
+.artFoot {
+  text-align: right;
+  width: 100%;
+}
+
+.firstLetter {
+  font-size: 50px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.artHead {
+ width:100%;
+}
+
+li {
+  display: inline-block;
+}
+
+.alignRight {
+  text-decoration: none;
+  text-align: right;
+  padding-left: 200px;
+}
+
+.listLinks>li {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside>div>img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 20px 0;
+
+}
+
+body {
+  width: 100%;
+  margin: 20px 100px 40px 100px;
+  background-color: grey;
+}
+
+header {
+  width: 89%;
+/*  margin: none;
+*/  background-color: white;
+}
+
+main {
+  width: 65%;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: lightblue;
+  padding:1%;
+}
+
+aside {
+  width: 24%;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  margin: none;
+  background-color: green;
+  padding: 1%;
+}
+
+footer {
+  background-color: lightgreen;
+  width: 89%;
+}
+
+img {
+  max-width: 100%;
+}
