@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>bank</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <img src="coolcat.jpg" alt="coolcat logo">
+    <div>La Banque de Chat</div>
+  </header>
+
+  <!-- this is the savings account -->
+  <div id="sav-wrapper">
+  <h3>SAVINGS</h3>
+  <div class="sav-balance"></div>
+  <input type="text" class="sav-amount" placeholder="Enter amount">
+  <div class="sav-prompt">INSUFFICIENT FUNDS...</div>
+  <button class="sav-deposit-btn">Deposit</button>
+  <button class="sav-withdraw-btn">Withdrawl</button>
+  </div>
+
+  <!-- this is the cheque account -->
+  <div id="chq-wrapper">
+  <h3>CHEQUE</h3>
+  <div class="chq-balance"></div>
+  <input type="text" class="chq-amount" placeholder="Enter amount">
+  <div class="chq-prompt">INSUFFICIENT FUNDS...</div>
+  <button class="chq-deposit-btn">Deposit</button>
+  <button class="chq-withdraw-btn">Withdrawl</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

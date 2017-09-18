@@ -1,0 +1,62 @@
+body {
+  width: 550px;
+  margin: 50px auto;
+  background: url(https://i.imgur.com/zuGLoG3.jpg) 50%;
+}
+
+header {
+  background-color: white;
+  max-height: 130px;
+  border: 2px solid lightblue;
+  border-radius: 20px;
+}
+header>div {
+  font-family: 'Monoton', cursive;
+  font-size: 30px;
+  display: inline-block;
+  margin-left: 70px;
+}
+header>img {
+  display: inline-block;
+  border-radius: 50%;
+  border: 5px solid lightblue;
+  margin-top: 10px;
+  margin-left: 10px;
+  max-width: 100px;
+}
+#sav-wrapper,
+#chq-wrapper {
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+  border: 2px solid lightblue;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: white;
+  font-family: monospace;
+  padding-bottom: 20px;
+}
+.sav-balance,
+.chq-balance {
+  padding: 2px;
+  font-style: 20px;
+}
+
+.sav-prompt {
+  color: red;
+  transition: 1s;
+  opacity: 0;
+  padding: 2px;
+}
+.chq-prompt {
+  color: red;
+  transition: 1s;
+  opacity: 0;
+  padding: 2px;
+}
+
+.sav-amount,
+.chq-amount {
+}
