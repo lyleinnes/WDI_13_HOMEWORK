@@ -1,10 +1,10 @@
 require 'pry'
 require 'fileutils'
 
-puts 'enter file name'
+puts 'Enter filename:'
 
-filename = gets
+filename = gets.chomp
 
-# lines = filename.foreach(filename).count
+line_count = `wc -l "#{filename}"`.strip.split(' ')[0].to_i
 
-puts readlines('filename').size
+puts line_count.to_s + " line(s)"
