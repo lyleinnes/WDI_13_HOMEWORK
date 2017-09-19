@@ -2,10 +2,11 @@ require 'pry'
 require 'fileutils'
 
 # --- q1 ---
-# days_of_the_week = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+days_of_the_week = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
 # --- q2 ---
-# puts days_of_the_week.rotate
+# puts days_of_the_week.rotate(6)
+# OR
 # last = days_of_the_week.pop(1)
 # days_of_the_week.push.unshift(last)
 # puts days_of_the_week
@@ -19,6 +20,6 @@ sliced = new_daysotw.slice(0,1)
 
 # --- q5 ---
 # -- not sure why the sort method isnt returning an alphabetized array in this case....
-sliced.sort
+check = sliced.sort
 
-puts sliced
+puts check
