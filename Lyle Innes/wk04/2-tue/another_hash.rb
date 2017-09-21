@@ -20,9 +20,15 @@ users = {
   users['Jonathan'][:twitter]
 # How would you add the number 7 to Erik's favorite numbers?
   users['Erik'][:favorite_numbers]+[7]
+  # can also do
+  users['Erik'][:favorite_numbers] << 7
+
 # How would you add yourself to the users hash?
   user = {"Lyle"=>{:twitter=>"lylosaurus", :favorite_numbers=>[13,6,88]}}
   users.merge!(user)
+  # can also do
+  users["Lyle"] = {:twitter=>"lylosaurus", :favorite_numbers=>[13,6,88]}
+
 # How would you return the array of Erik's favorite numbers?
   users['Erik'][:favorite_numbers]
 # How would you return the smallest of Erik's favorite numbers?
@@ -38,6 +44,6 @@ users = {
 newFavs = []
 users.each_value do |users|
   newFavs.push(users[:favorite_numbers])
-  newFavs = newFavs.flatten.sort.uniq
 end
+puts newFavs.flatten.sort.uniq
 binding.pry
