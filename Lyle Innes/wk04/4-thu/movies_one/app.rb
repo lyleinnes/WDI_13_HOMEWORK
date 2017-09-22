@@ -7,7 +7,7 @@ require 'httparty'
 get '/about' do
   @movie = params['movie']
 
-  response = HTTParty.get("http://omdbapi.com/?t=#{@movie}&apikey=2f6435d9")
+  response = HTTParty.get("http://omdbapi.com/?t=#{@movie}&apikey=#{ENV['OMDB_API_KEY']}")
 
 
   @title = response["Title"]
