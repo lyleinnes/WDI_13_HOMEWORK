@@ -1,0 +1,21 @@
+body {
+  width: 850px;
+  /*box-sizing: border-box;*/
+  margin: 5px auto;
+}
+.poster {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 30%;
+  margin: none;
+}
+.poster>img {
+  width: 100%
+}
+.info {
+  display: inline-block;
+  width: 65%;
+  vertical-align: top;  
+  background-color: lightgrey;
+  padding-left: 3%;
+}
