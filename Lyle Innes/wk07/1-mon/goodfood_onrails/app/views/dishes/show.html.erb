@@ -1,0 +1,10 @@
+<h1>this is the dish show page</h1>
+
+<h3><%= @dish.name %></h3>
+<img style="max-width: 500px" src="<%= @dish.image_url %>" alt="a dish">
+<div>
+  <a href="/dishes/<%= @dish.id %>/edit">edit</a>
+</div>
+<div>
+  <a href="/dishes/<%= @dish.id %>/confirm_del">delete</a>
+</div>

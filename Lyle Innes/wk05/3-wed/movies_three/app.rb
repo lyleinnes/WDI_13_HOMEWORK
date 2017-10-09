@@ -1,35 +1,38 @@
 require 'sinatra'
 require 'sinatra/reloader'
 require 'pry'
+require 'pg'
 require 'httparty'
+require_relative 'db_config'
+require_relative 'models/movie'
+require_relative 'movie_methods'
 
+
+get '/' do
+  erb :index 
+end
+
+get '/results' do
+  title = params[:title] # ONLY PARAMS CAN BE CAPTURED AS A SYMBOL (IE: [:likethis] AS OPPOSED TO ['this'])
+  @movies = HTTParty.get("http://omdbapi.com/?s=#{title}&apikey=#{ENV['OMDB_API_KEY']}").parsed_response['Search']
+  erb :results
+end
 
 get '/about' do
-  @movie = params[:title]
-  oneResponse = HTTParty.get("http://omdbapi.com/?t=#{@movie}&apikey=#{ENV['OMDB_API_KEY']}")
+  imdb_id = params[:imdb_id]
 
+  @movie = get_movie_from_db(imdb_id) #this will return nil if there is no movie in the database
 
-  @title = oneResponse["Title"]
-  @released = oneResponse["Released"]
-  @director = oneResponse["Director"]
-  @actors = oneResponse["Actors"]
-  @runtime = oneResponse["Runtime"]
-  @rated = oneResponse["Rated"]
-  @poster = oneResponse["Poster"]
-  @plot = oneResponse["Plot"]
+  if !@movie #the not of nil is true, so this will pass when there is no movie found in our database
+    movie_info = request_omdb(imdb_id)
+    @movie = Movie.create(
+      title: movie_info['Title'],
+      imdb_id: movie_info['imdb_id'],
+      poster: movie_info['Poster']
+      )
+  end
   # binding.pry
   erb :about
 end
 
-get '/' do
-  erb :index
-end
-
-get '/results' do
-  @user_input = params['title_input']
-  response = HTTParty.get("http://omdbapi.com/?s=#{@user_input}&apikey=#{ENV['OMDB_API_KEY']}")
-  @movies = response.parsed_response["Search"]
-
-  erb :results
-end
 

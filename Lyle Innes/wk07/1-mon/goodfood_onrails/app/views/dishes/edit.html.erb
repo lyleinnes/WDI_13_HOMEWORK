@@ -1,0 +1,11 @@
+<h1>this is the dish edit page</h1>
+
+<form action="/dishes/<%= @dish.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label for="">name</label>
+  <input type="text" name="name" value="<%= @dish.name %>">
+  <label for="">image_url</label>
+  <textarea name="image_url"><%= @dish.image_url %></textarea>
+  <button>post</button>
+</form>

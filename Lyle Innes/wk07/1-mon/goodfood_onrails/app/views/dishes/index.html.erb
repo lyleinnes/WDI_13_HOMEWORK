@@ -1,0 +1,9 @@
+<h1>this is the dish index page</h1>
+
+<a href="/dishes/new">add dish</a>
+
+
+<% @dishes.each do |dish| %>
+  <a href="/dishes/<%=dish.id%>"><h3><%= dish.name %></h3></a>
+  <img style="max-width: 500px" src="<%= dish.image_url %>" alt="a dish">
+<% end %>

@@ -1,0 +1,9 @@
+<h1>this is the dish confirm delete page</h1>
+
+<h3>are you sure you want to delete <%= @dish.name %>?</h3>
+
+<form action="/dishes/<%= @dish.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <button>DESTROY IT!</button>
+</form>

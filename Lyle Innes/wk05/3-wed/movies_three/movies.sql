@@ -7,7 +7,8 @@ CREATE TABLE movies (
   genre VARCHAR(400),
   actors VARCHAR(500),
   plot VARCHAR(1000),
-  image_url VARCHAR(400)
+  image_url VARCHAR(400),
+  imdbID VARCHAR(200)
 );
 
 INSERT INTO movies (title, director, year, rated, genre, actors, plot, image_url) VALUES ('', '', '', '', '', '', '', '');

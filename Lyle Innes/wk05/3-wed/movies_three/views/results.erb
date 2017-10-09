@@ -1,11 +1,16 @@
+<a href="/">Home</a>
+
 <h1>search results</h1>
 
-<ul>
-  <% @movies.each do |movie| %>
-  <li><a href="/about?title=<%=movie['Title']%>"> <%= movie["Title"] %> </a></li>
-  <% end %>
-</ul>
-
+<% if @movies != nil %>
+  <ul>
+    <% @movies.each do |movie| %>
+    <li><a href="/about?imdb_id=<%=movie['imdbID']%>"> <%= movie["Title"] %></a></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p> no results sorry :'( </p>
+<% end %>
 
 
 
