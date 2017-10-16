@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :comments
+  get '/comments/:id/confirm_del', to: 'comments#confirm_del'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # resources :dishes <-- this route adds all the possible routes for 'dish' views, including GET/POST/PATCH/PUT/DELETE. weeeowwwww!
   get '/', to: 'dishes#index'

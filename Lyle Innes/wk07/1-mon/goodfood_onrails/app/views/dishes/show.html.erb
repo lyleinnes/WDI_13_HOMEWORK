@@ -2,9 +2,24 @@
 
 <h3><%= @dish.name %></h3>
 <img style="max-width: 500px" src="<%= @dish.image_url %>" alt="a dish">
+
 <div>
   <a href="/dishes/<%= @dish.id %>/edit">edit</a>
 </div>
 <div>
   <a href="/dishes/<%= @dish.id %>/confirm_del">delete</a>
 </div>
+
+<%= form_tag '/comments', method: 'post' do %>
+  <input type="hidden" name="dish_id" value="<%= @dish.id %>">
+  <label for="">comment</label>
+  <textarea name="content"></textarea>
+  <button type="submit">post comment</button>
+<% end %>
+<ul>
+<% @dish.comments.each do |comment| %>
+  <li><%= comment.content %></li>
+  <a href="/comments/<%= comment.id %>/edit">edit</a>
+  <a href="/comments/<%= comment.id %>/confirm_del">delete</a>
+<% end %>
+</ul>
