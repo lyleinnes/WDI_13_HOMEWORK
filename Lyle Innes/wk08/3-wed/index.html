@@ -5,25 +5,51 @@
   <title>ajax movies</title>
 </head>
 <body>
-
+  <form>
     <label>movie title</label>
-    <textarea id="title-input"></textarea>
+    <input id="title-input"></input>
     <button id="search-btn">search</button>
+    <div id="results-container"></div>
+  </form>
 
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script>
 
-  $movieTitle = $()
+  $movieTitle = $('#title-input');
+  $searchButton = $('#search-btn');
+  $resultsContainer = $('#results-container');
 
-  $.ajax({
-  method: "get",
-  url: "http://www.omdbapi.com",
-  data: { apikey: "2f6435d9", s: $movieTitle }
-})
-  .done(function( msg ) {
-    alert( "Data Saved: " + msg );
+  $searchButton.on('click', function(){
+    event.preventDefault();
+    $resultsContainer.empty();
+    $.ajax({
+    method: "get",
+    url: "http://www.omdbapi.com",
+    data: { apikey: "2f6435d9", s: $movieTitle.val() }
+    })
+    .done(function(results) {
+      $results = results.Search
+      $.each($results, function (index, value) {
+        $titleTag = $("<h2>");
+        $titleTag.append(value.Title)
+        $resultsContainer.append($titleTag)
+      })
+    })
   });
 
 </script>
+
+<!-- AJAX EXAMPLE BELOW
+  $('.star').on('click', function(event) {
+    var dishId = $(event.target).closest('.ui-card').data('dish-id');
+    $.ajax({
+      url: '/api/likes',
+      method: 'post',
+      data: { dish_id: dishId }
+    }).done(function(response) {
+      var $likesCount = $(event.target).closest('.ui-card').find('.likes-count');
+      $likesCount.text(response.likes_count)
+    })
+-->
