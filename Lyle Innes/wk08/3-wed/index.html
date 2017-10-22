@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ajax movies</title>
+</head>
+<body>
+
+    <label>movie title</label>
+    <textarea id="title-input"></textarea>
+    <button id="search-btn">search</button>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+
+  $movieTitle = $()
+
+  $.ajax({
+  method: "get",
+  url: "http://www.omdbapi.com",
+  data: { apikey: "2f6435d9", s: $movieTitle }
+})
+  .done(function( msg ) {
+    alert( "Data Saved: " + msg );
+  });
+
+</script>
