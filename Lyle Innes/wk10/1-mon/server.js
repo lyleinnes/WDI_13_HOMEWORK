@@ -27,7 +27,7 @@ var app = function(request, response) {
   var path = request.url;
   if (path === '/postcodes') {
     fs.readFile('Australian_Post_Codes_Lat_Lon.csv', 'utf-8', function(error, data) {
-      response.writeHead(200, {'Content-Type': 'application/json'});
+      // response.writeHead('200', {'Content-Type': 'application/json'});
       response.write(csvJSON(data));
       response.end();
     });
